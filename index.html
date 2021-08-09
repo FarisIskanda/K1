@@ -1,47 +1,68 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Change background color</title>
-  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <link rel="shortcut icon" href="http://cartodb.com/assets/favicon.ico" />
-  <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" />
-  <script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+<!-- HEADER -->
+ <div class="header">
+     <div class="email">
+         <span style="color; indigo;">&#9993;</span>
+       <font>sales@setiatravel</font>
+     </div>
+     <div class="phone">
+         <span style="color: indigo">&#9990;</span>
+         <font>+603 - 55239898</font>
+     </div>
+ </div>
 
-  <style>
-    html, body, #map {
-      background-color: #06283f;
-      width:100%; 
-      height:100%; 
-      padding: 0; 
-      margin: 0;
-  </style>
-</head>
+.header {
+      margin: auto;
+      margin-top: 10px;
+      border-bottom: 1px solid;
+      overflow: hidden;
+      padding-bottom: 5px;
+}
+.email {
+    float: left;
+    min-width: 200px;
+    padding-left: 20px;
+}
+.phone {
+    float: left;
+    border-left: 1px solid;
+    padding-left: 20px;
 
-<body>
-  
-  <div id='map'></div>
-  
-  <script type="text/javascript">
-    function main() {
-
-      // declare map object
-      var map;
-          
-      //  set center and zoom level
-      var options = {
-        center: [40, -90], 
-        zoom: 5  
-      };
-      
-      // give options to map object
-      var map = new L.Map('map', options);
-
-      // add midnight commander basemap
-      L.tileLayer('https://cartocdn_{s}.global.ssl.fastly.net/base-midnight/{z}/{x}/{y}.png').addTo(map);
-      
-    }
-    window.onload = main;
-  </script>
-</body>
-</html>
+<!-- MENU -->
+<div class="menu">
+     <img src="image/logo.png">
+     <ul>
+       <li><a href="#">Contact Us</a></li>
+       <li><a href="#">Our Services</a></li>
+       <li><a href="#">About Us</a></li>
+       <li><a href="#">Home</a></li>
+     </ul>
+</div>
+/*MENU*/
+  .menu {
+      margin-top: 25px;
+  }
+  .menu img {
+      max-width: 250px;
+      float: left;
+  }
+  .menu ul {
+      list-style-type: none;
+      margin: auto;
+  }
+  .menu li {
+      float: right;
+      border-left: 1px solid grey;
+  }
+  .menu a {
+      text-decoration: none;
+      display: block;
+      padding: 15px;
+  }
+  .menu li:hover {
+      background-color: antiquewhite;
+  }
+  .menu a:hover {
+      color: black;
+      font-weight: bold;
+  }
+     
